@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Dynamic Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Secure Dynamic Task Manager</h1>
+        <p class="subtitle">Organize your tasks easily</p>
+
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <p id="taskMessage"></p>
+
+        <button id="loadSamplesBtn" class="sample-btn">
+            Load Sample Tasks
+        </button>
+
+        <div class="summary">
+            <div class="summary-box">
+                <h3>Total Tasks</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="summary-box">
+                <h3>Pending</h3>
+                <p id="pendingCount">0</p>
+            </div>
+
+            <div class="summary-box">
+                <h3>Completed</h3>
+                <p id="completedCount">0</p>
+            </div>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
